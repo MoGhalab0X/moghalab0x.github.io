@@ -1,0 +1,8 @@
+baseURL = "https://moghalab0x.github.io/"
+languageCode = "en-us"
+title = "MoGhalab0X"
+
+theme = "hugo-theme-stack"
+
+[pagination]
+pagerSize = 5

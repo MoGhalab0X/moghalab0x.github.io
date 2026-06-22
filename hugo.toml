@@ -1,0 +1,17 @@
+baseURL = "https://moghalab0x.github.io/"
+title = "MoGhalab0X"
+theme = "hugo-theme-stack"
+defaultContentLanguage = "en"
+
+[pagination]
+pagerSize = 10
+
+[params]
+mainSections = ["research","writeups","projects","tools"]
+
+[params.sidebar]
+emoji = "💀"
+subtitle = "Security Researcher"
+
+[params.footer]
+since = 2026
