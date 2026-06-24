@@ -1,19 +1,35 @@
-[[social]]
+[[menu.social]]
 identifier = "github"
 name = "GitHub"
 url = "https://github.com/MoGhalab0X"
+weight = 1
 
-[[social]]
+[menu.social.params]
+icon = "brand-github"
+
+[[menu.social]]
 identifier = "linkedin"
 name = "LinkedIn"
 url = "https://linkedin.com/in/mohamed-emad-ghallab"
+weight = 2
 
-[[social]]
-identifier = "facebook"
-name = "Facebook"
-url = "https://facebook.com/Mohamed Ghalab"
+[menu.social.params]
+icon = "brand-linkedin"
 
-[[social]]
+[[menu.social]]
 identifier = "telegram"
 name = "Telegram"
 url = "https://t.me/MoGhallab0X"
+weight = 3
+
+[menu.social.params]
+icon = "brand-telegram"
+
+[[menu.social]]
+identifier = "facebook"
+name = "Facebook"
+url = "https://facebook.com/MohamedGhalab"
+weight = 4
+
+[menu.social.params]
+icon = "brand-facebook"

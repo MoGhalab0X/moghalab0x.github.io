@@ -6,12 +6,18 @@ draft: false
 
 # Contact
 
-GitHub:
+GitHub
+
 https://github.com/MoGhalab0X
 
-LinkedIn:
+LinkedIn
+
 https://linkedin.com/in/mohamed-emad-ghallab
 
-Email:
-mohamedghalab123a@gmail.com
+Telegram
 
+https://t.me/MoGhallab0X
+
+Email
+
+mohamedghalab123a@gmail.com
