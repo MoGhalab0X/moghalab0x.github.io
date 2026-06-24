@@ -1,17 +1,7 @@
 [[main]]
-name = "Research"
-url = "/research/"
-weight = 1
-
-[[main]]
 name = "Writeups"
 url = "/writeups/"
 weight = 2
-
-[[main]]
-name = "Projects"
-url = "/projects/"
-weight = 3
 
 [[main]]
 name = "Tools"
