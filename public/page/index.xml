@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on MoGhalab0X</title>
-        <link>http://localhost:1313/page/</link>
+        <link>https://moghalab0x.github.io/page/</link>
         <description>Recent content in Pages on MoGhalab0X</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /></channel>
+        <language>en</language>
+        <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://moghalab0x.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>About</title>
+            <link>https://moghalab0x.github.io/page/about/</link>
+            <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+            <guid>https://moghalab0x.github.io/page/about/</guid>
+            <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&#xA;&lt;/h1&gt;&lt;p&gt;I&amp;rsquo;m Security.&lt;/p&gt;&#xA;&lt;p&gt;A Security Researcher focused on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bug Bounty Hunting&lt;/li&gt;&#xA;&lt;li&gt;Penetration Testing&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I enjoy finding vulnerabilities and building security tools.&lt;/p&gt;&#xA;</description>
+        </item><item>
+            <title>Contact</title>
+            <link>https://moghalab0x.github.io/page/contact/</link>
+            <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+            <guid>https://moghalab0x.github.io/page/contact/</guid>
+            <description>&lt;h1 id=&#34;contact&#34;&gt;Contact&#xA;&lt;/h1&gt;&lt;p&gt;GitHub:&#xA;&lt;a class=&#34;link&#34; href=&#34;https://github.com/MoGhalab0X&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;https://github.com/MoGhalab0X&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;LinkedIn:&#xA;&lt;a class=&#34;link&#34; href=&#34;https://linkedin.com/in/mohamed-emad-ghallab&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;https://linkedin.com/in/mohamed-emad-ghallab&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Email:&#xA;&lt;a class=&#34;link&#34; href=&#34;mailto:mohamedghalab123a@gmail.com&#34; &gt;mohamedghalab123a@gmail.com&lt;/a&gt;&lt;/p&gt;&#xA;</description>
+        </item></channel>
 </rss>
