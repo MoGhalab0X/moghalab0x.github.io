@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="My first writeup.\n">
-<title>First Writeup</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Critical Remote Command Execution vulnerability affecting Next.js React Server Components.">
+<title>Critical RCE in Next.js (CVE-2025-55182)</title>
 
 
 <link rel="canonical" href="http://localhost:1313/writeups/first-writeup/">
@@ -12,13 +12,13 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
 
 
-<link rel="stylesheet" href="/scss/style.min.e62e09c60ba428a627e03568fa3df938f6a8224f815b5846f00816c17d4a0be4.css"><meta property='og:title' content="First Writeup">
-<meta property='og:description' content="My first writeup.\n">
+<link rel="stylesheet" href="/scss/style.min.e62e09c60ba428a627e03568fa3df938f6a8224f815b5846f00816c17d4a0be4.css"><meta property='og:title' content="Critical RCE in Next.js (CVE-2025-55182)">
+<meta property='og:description' content="Critical Remote Command Execution vulnerability affecting Next.js React Server Components.">
 <meta property='og:url' content='http://localhost:1313/writeups/first-writeup/'>
 <meta property='og:site_name' content='MoGhalab0X'>
-<meta property='og:type' content='article'><meta property='article:section' content='Writeups' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-06-22T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="First Writeup">
-<meta name="twitter:description" content="My first writeup.\n"><style>
+<meta property='og:type' content='article'><meta property='article:section' content='Writeups' /><meta property='article:tag' content='Next.js' /><meta property='article:tag' content='RCE' /><meta property='article:tag' content='CVE-2025-55182' /><meta property='article:tag' content='Bug Bounty' /><meta property='article:published_time' content='2026-06-22T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-06-22T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Critical RCE in Next.js (CVE-2025-55182)">
+<meta name="twitter:description" content="Critical Remote Command Execution vulnerability affecting Next.js React Server Components."><style>
 body {
     background-image: url('/img/background1.jpg') !important;
     background-size: cover !important;
@@ -72,25 +72,9 @@ body {
         
         
         <li >
-            <a href='/research/' >
-                
-                <span>Research</span>
-            </a>
-        </li>
-        
-        
-        <li >
             <a href='/writeups/' >
                 
                 <span>Writeups</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/projects/' >
-                
-                <span>Projects</span>
             </a>
         </li>
         
@@ -158,9 +142,13 @@ body {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/writeups/first-writeup/">First Writeup</a>
+            <a href="/writeups/first-writeup/">Critical RCE in Next.js (CVE-2025-55182)</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            Critical Remote Command Execution vulnerability affecting Next.js React Server Components.
+        </h3>
         
     </div>
 
@@ -217,13 +205,95 @@ body {
     <section class="article-content">
     
     
-    <p>My first writeup.</p>
+    <h1 id="executive-summary">Executive Summary
+</h1><p>During my security research, I identified and successfully exploited a <strong>Critical Remote Command Execution (RCE)</strong> vulnerability affecting <strong>Next.js React Server Components (RSC)</strong>.</p>
+<p>The vulnerability allowed arbitrary operating system command execution on the target server.</p>
+<hr>
+<h2 id="vulnerability-details">Vulnerability Details
+</h2><div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>Field</th>
+					<th>Value</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Product</td>
+					<td>Next.js</td>
+			</tr>
+			<tr>
+					<td>CVE</td>
+					<td>CVE-2025-55182</td>
+			</tr>
+			<tr>
+					<td>Severity</td>
+					<td>🔴 Critical</td>
+			</tr>
+			<tr>
+					<td>Impact</td>
+					<td>Remote Command Execution</td>
+			</tr>
+			<tr>
+					<td>Component</td>
+					<td>React Server Components</td>
+			</tr>
+	</tbody>
+</table></div>
+<hr>
+<h2 id="proof-of-concept">Proof of Concept
+</h2><p>The following command was used to demonstrate successful command execution.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 nextrce.py <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>-u https://target.com <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>-c <span style="color:#e6db74">&#34;cat /etc/passwd&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="demonstration">Demonstration
+</h2><p><img alt="Successful exploitation" class="gallery-image" data-flex-basis="169px" data-flex-grow="70" height="752" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/writeups/first-writeup/cover.png" width="531"></p>
+<hr>
+<h2 id="technical-details">Technical Details
+</h2><p>The vulnerability exists in the React Server Components implementation, allowing an attacker to execute arbitrary commands on the underlying operating system.</p>
+<p>Once exploited, the application executes attacker-controlled commands and returns their output.</p>
+<hr>
+<h2 id="impact">Impact
+</h2><p>An attacker could potentially:</p>
+<ul>
+<li>Execute arbitrary operating system commands.</li>
+<li>Read sensitive files.</li>
+<li>Access application secrets.</li>
+<li>Fully compromise the affected server.</li>
+</ul>
+<hr>
+<h2 id="mitigation">Mitigation
+</h2><ul>
+<li>Upgrade Next.js to the patched release.</li>
+<li>Restrict exposure of vulnerable RSC endpoints.</li>
+<li>Apply the official security patch.</li>
+<li>Continuously monitor for exploitation attempts.</li>
+</ul>
+<hr>
+<h2 id="references">References
+</h2><ul>
+<li>Next.js Security Advisory</li>
+<li>CVE-2025-55182</li>
+</ul>
 
 </section>
 
 
     <footer class="article-meta article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/tags/next.js/">Next.js</a>
+        
+            <a href="/tags/rce/">RCE</a>
+        
+            <a href="/tags/cve-2025-55182/">CVE-2025-55182</a>
+        
+            <a href="/tags/bug-bounty/">Bug Bounty</a>
+        
+    </section>
+
 
     </footer>
 

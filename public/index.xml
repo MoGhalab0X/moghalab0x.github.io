@@ -17,17 +17,5 @@
             <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
             <guid>http://localhost:1313/tools/js-analyzer/</guid>
             <description>&lt;p&gt;Tool description.&lt;/p&gt;&#xA;</description>
-        </item><item>
-            <title>Recon Automation</title>
-            <link>http://localhost:1313/projects/recon-tool/</link>
-            <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1313/projects/recon-tool/</guid>
-            <description>&lt;p&gt;Automation project for reconnaissance.&lt;/p&gt;&#xA;</description>
-        </item><item>
-            <title>Welcome to MoGhalab0X</title>
-            <link>http://localhost:1313/research/welcome/</link>
-            <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1313/research/welcome/</guid>
-            <description>&lt;p&gt;Welcome to my cybersecurity research blog.&lt;/p&gt;&#xA;</description>
         </item></channel>
 </rss>
