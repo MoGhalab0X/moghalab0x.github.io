@@ -7,6 +7,7 @@ tags:
   - RCE
   - CVE-2025-55182
   - Bug Bounty
+  - Web Security
 ---
 
 # Executive Summary
