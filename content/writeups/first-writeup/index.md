@@ -1,5 +1,5 @@
 ---
-title: "Critical RCE in Next.js (CVE-2025-55182)"
+title: "Remote Command Execution (RCE) in Next.js — CVE-2025-55182"
 date: 2026-06-22
 description: "Critical Remote Command Execution vulnerability affecting Next.js React Server Components."
 tags:
